@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensure proper rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that appears in the browser tab -->
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+    <!-- Main heading for the form -->
+    <h1>Hotel Room Booking Form</h1>
+
+    <!-- The form element - when submitted, it will send data to a server (here using a placeholder action) -->
+    <!-- In a real application, replace '#' with the actual server endpoint -->
+    <form action="#" method="post">
+
+        <!-- Full Name input field -->
+        <!-- 'label' provides accessible text for screen readers -->
+        <!-- 'for' attribute links label to input via 'id' -->
+        <label for="fullName">Full Name:</label><br>
+        <!-- Text input for name, required field -->
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+        <!-- Phone Number field -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="‪+91 9288456315‬" required><br><br>
+
+        <!-- Check-in Date -->
+        <label for="checkIn">Check-in Date:</label><br>
+        <!-- Date picker input - opens calendar -->
+        <input type="date" id="checkIn" name="checkIn" required><br><br>
+
+        <!-- Check-out Date -->
+        <label for="checkOut">Check-out Date:</label><br>
+        <input type="date" id="checkOut" name="checkOut" required><br><br>
+
+        <!-- Room Type selection dropdown -->
+        <label for="roomType">Room Type:</label><br>
+        <select id="roomType" name="roomType" required>
+            <!-- Placeholder option (disabled and selected by default) -->
+            <option value="" disabled selected>Select a room type</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <!-- Special Requests textarea -->
+        <label for="specialRequests">Special Requests:</label><br>
+        <!-- Textarea allows multi-line input -->
+        <textarea id="specialRequests" name="specialRequests" rows="4" cols="50" 
+                  placeholder="Any dietary needs, allergies, or other requests..."></textarea><br><br>
+
+        <!-- Submit button to book the room -->
+        <button type="submit">Book Now</button>
+
+        <!-- Reset button to clear all form fields -->
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
